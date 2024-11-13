@@ -1,0 +1,26 @@
+.Text {
+  text-decoration: none;
+}
+
+.size_m {
+  font-size: var(--font-size-m);
+}
+.size_l {
+  font-size: var(--font-size-l);
+}
+.size_xl {
+  font-size: var(--font-size-xl);
+}
+
+.primary {
+  color: var(--primary-color);
+}
+.blue {
+  color: var(--color-link);
+}
+.gray {
+  color: var(--color-gray);
+}
+.red {
+  color: red;
+}

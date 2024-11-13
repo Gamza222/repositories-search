@@ -1,0 +1,37 @@
+.RepositoryOwner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &__content {
+    display: flex;
+    gap: inherit;
+    flex-direction: column;
+    margin-top: auto;
+  }
+}
+
+.Avatar {
+  width: 100% !important;
+  height: auto !important;
+
+  @media screen and (max-width: 1150px) {
+    width: 50% !important;
+    flex-shrink: 0;
+    min-width: 50px;
+  }
+  @media screen and (max-width: 900px) {
+    width: 16% !important;
+    flex-shrink: 0;
+    min-width: 50px;
+  }
+}
+
+.VisitBtn {
+  width: 100%;
+
+  > button {
+    width: 100%;
+    justify-content: center;
+  }
+}

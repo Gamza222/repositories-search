@@ -1,0 +1,24 @@
+{
+  "Find a repository...": "Find a repository...",
+  "Sign out": "Sign out",
+  "Type": "Type",
+  "to search": "to search",
+  "User repositories": "User repositories",
+  "Search all of GitHub": "Search all of GitHub",
+  "Jump to": "Jump to",
+  "User is not authenticated or login is unavailable.": "User is not authenticated or login is unavailable.",
+  "Visit Github profile": "Visit Github profile",
+  "Stars": "Stars",
+  "No commits": "No commits",
+  "Languages": "Languages",
+  "No languages found": "No languages found",
+  "languagesFullNames": {
+    "en": "English",
+    "ru": "Russian"
+  },
+  "No repositoies found!": "No repositoies found!",
+  "languagesShortNames": {
+    "en": "En",
+    "ru": "Ru"
+  }
+}

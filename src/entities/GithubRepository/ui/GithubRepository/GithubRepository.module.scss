@@ -1,0 +1,20 @@
+@use "../../../../app/styles/mixins/mixins.scss" as mixins;
+
+.GithubRepository {
+  @include mixins.contentBox;
+  &__content {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.Title {
+  font-size: var(--font-size-xl);
+  color: var(--primary-color);
+}
+
+.Languages {
+  margin-top: auto;
+}

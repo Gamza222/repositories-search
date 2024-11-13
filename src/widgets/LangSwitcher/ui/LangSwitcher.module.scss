@@ -1,0 +1,13 @@
+.LangSwitcher {
+  display: flex;
+  position: relative;
+}
+
+.LangSwitcherButton {
+  align-items: center;
+  gap: 0.4rem;
+
+  &__pic {
+    transform: translateY(0.1rem);
+  }
+}

@@ -1,0 +1,38 @@
+@use "../../../app/styles/mixins/mixins.scss" as mixins;
+
+.RepositoryButton {
+  width: 100%;
+  > button {
+    width: inherit;
+    width: inherit;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    color: var(--color-gray);
+  }
+}
+
+.LeftPart {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-grow: 1;
+
+  > svg {
+    @include mixins.Pic;
+    transform: translateY(2px);
+    flex-shrink: 0;
+  }
+
+  > p {
+    flex-shrink: 2;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+    text-align: start;
+  }
+}
+
+.RightPart {
+  white-space: nowrap;
+  flex-shrink: 0;
+}

@@ -1,0 +1,105 @@
+@use "../../../app/styles/mixins/mixins.scss" as mixins;
+
+.Button {
+  cursor: pointer;
+  color: var(--primary-color);
+  padding: 0.45rem;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.clear {
+  padding: 0;
+}
+.usual {
+  border-radius: var(--border-radius-box);
+  transition: all 0.1s linear;
+  color: var(--primary-color);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  > svg {
+    @include mixins.Pic;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--bg-color-transparent);
+    }
+  }
+
+  &:active {
+    background-color: var(--bg-color-transparent);
+  }
+}
+
+.border {
+  border-radius: var(--border-radius-box);
+  transition: all 0.1s linear;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  border: 1px solid var(--border-color-default);
+
+  > svg {
+    @include mixins.Pic;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--bg-color-transparent);
+    }
+  }
+
+  &:active {
+    background-color: var(--bg-color-transparent);
+  }
+}
+.filled {
+  border-radius: var(--border-radius-box);
+  transition: all 0.1s linear;
+  background: var(--button-bg-light);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  border: 1px solid var(--border-color-default);
+
+  > svg {
+    @include mixins.Pic;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+
+  &:active {
+    filter: brightness(1.1);
+  }
+}
+
+.size_m {
+  font-size: var(--font-size-m);
+}
+.size_l {
+  font-size: var(--font-size-l);
+  padding: 0.6rem 1rem;
+
+  > svg {
+    font-size: 1.4rem;
+  }
+}
+.size_xl {
+  font-size: var(--font-size-xl);
+}
+
+.disabled {
+  opacity: 0.5;
+}

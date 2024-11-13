@@ -1,0 +1,44 @@
+@mixin Page {
+  width: 100%;
+  padding: var(--padding-page-top) var(--padding-page-sides);
+}
+
+@mixin Pic {
+  font-size: 1.3em;
+  color: var(--color-gray);
+}
+@mixin PicButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.38em;
+  height: auto;
+
+  &__pic {
+    @include Pic;
+  }
+}
+
+@mixin Counter {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  &__pic {
+    @include Pic;
+  }
+
+  &__text {
+    font-size: var(--font-size-m);
+    color: var(--primary-color);
+    padding: 0 0.6rem;
+    background: var(--bg-color-transparent);
+    border-radius: 15px;
+  }
+}
+
+@mixin contentBox {
+  padding: 1.5rem;
+  border: 1px solid var(--border-color-default);
+  border-radius: var(--border-radius-box);
+}

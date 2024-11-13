@@ -1,0 +1,32 @@
+.Header {
+  --header-services-gap: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color-default);
+  gap: 1rem;
+  padding: var(--header-padding-top) var(--padding-page-sides);
+  background: var(--bg-color-black);
+  height: var(--header-height);
+
+  &__services {
+    display: flex;
+    gap: var(--header-services-gap);
+    width: 100%;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  @media screen and (max-width: 320px) {
+    --header-services-gap: 1rem;
+  }
+}
+
+.Logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  &__pic {
+    font-size: 2rem;
+  }
+}

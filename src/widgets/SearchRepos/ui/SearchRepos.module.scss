@@ -1,0 +1,102 @@
+@use "../../../app/styles/mixins/mixins.scss" as mixins;
+
+.SearchRepos {
+  --searchRepos-modal-ul-padding-top: 1rem;
+  --searchRepos-input-padding-top: 0.3rem; // this value should be higher than shared SearchInput div:nth-child(2) div:nth-child(1) span:nth-child(1) padding!!!
+  --searchRepos-input-padding-left: 0.45rem;
+  --searchRepos-input-padding-right: 0.3rem;
+  width: 100%;
+  position: relative;
+  background: transparent;
+  display: flex;
+  font-size: var(--font-size-m);
+  min-width: 0;
+  flex: 1 1 auto;
+
+  @media screen and (max-width: 900px) {
+    justify-content: flex-end;
+  }
+}
+
+.Modal {
+  width: calc(100% + 2 * var(--header-padding-top)) !important;
+  top: calc(-1 * var(--header-padding-top)) !important;
+
+  @media screen and (max-width: 900px) {
+    position: fixed !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100vw !important;
+    transform: none !important;
+  }
+}
+
+.Modal > div:nth-child(1) {
+  padding: var(--header-padding-top);
+}
+
+.Button,
+.Modal > div:nth-child(1) > div:nth-child(1) > input:nth-child(2) {
+  padding-top: var(--searchRepos-input-padding-top) !important;
+  padding-bottom: var(--searchRepos-input-padding-top) !important;
+}
+
+.Button,
+.Modal > div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  height: calc(var(--header-height) - 2 * var(--header-padding-top) - 1px);
+  padding-left: var(--searchRepos-input-padding-left) !important;
+  padding-right: var(--searchRepos-input-padding-right) !important;
+  border-radius: var(--border-radius-box);
+}
+
+.Button span,
+.Modal > div:nth-child(1) > div:nth-child(1) > span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 0;
+
+  > svg {
+    @include mixins.Pic;
+  }
+}
+
+.Button {
+  @media screen and (max-width: 900px) {
+    width: auto !important;
+    padding-left: 0.45rem !important;
+    padding-right: 0.45rem !important;
+
+    > div:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+.ModalOverlay {
+  background: var(--overlay-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+.overlayOpened {
+  visibility: visible;
+}
+.overlayClosed {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .SearchRepos {
+    width: 85%;
+  }
+}

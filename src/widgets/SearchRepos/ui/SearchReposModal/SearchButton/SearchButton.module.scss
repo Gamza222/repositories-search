@@ -1,0 +1,42 @@
+@use "../../../../../app/styles/mixins/mixins.scss";
+
+.SearchButton {
+  padding: var(--searchRepos-modal-ul-padding-top) 0;
+  width: 100%;
+}
+
+.SearchButtonShow {
+  display: block;
+}
+.SearchButtonHide {
+  display: none;
+}
+
+.Button {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+
+  &__left {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+
+    &__text {
+      word-wrap: break-all;
+      overflow-wrap: anywhere;
+      text-align: start;
+      flex-shrink: 2;
+    }
+  }
+
+  &__rightText {
+    white-space: nowrap;
+  }
+}
+
+.SearchPic {
+  @include mixins.Pic;
+  flex-shrink: 0;
+}

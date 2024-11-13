@@ -1,0 +1,6 @@
+@use "../../../app/styles/mixins/mixins.scss" as mixins;
+
+.MainPage {
+  width: 100%;
+  @include mixins.Page;
+}

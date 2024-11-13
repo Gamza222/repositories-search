@@ -1,0 +1,47 @@
+:root {
+  --font-family-main: consolas, "Times New Roman", serif;
+  --font-size-m: 14px;
+  --font-line-m: 21px;
+  --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+  --font-size-l: 20px;
+  --font-line-l: 32px;
+  --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+  --font-size-xl: 32px;
+  --font-line-xl: 40px;
+  --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+
+  //Sizes
+  --navbar-height: 50px;
+  --sidebar-width: 300px;
+  --sidebar-width-collapsed: 80px;
+
+  //indexes
+  --modal-z-index: 10;
+
+  //colors
+  --border-color-default: #3d444d;
+  --color-link: #4493f8;
+  --color-outline: #1f6feb;
+  --red-light: #f00;
+  --red-dark: #ce0505;
+  --shadow-border: 0px 0px 0px 1px #3d444d;
+
+  //heights
+  --header-height: 4.1rem;
+
+  //paddings
+  --padding-page-sides: 1.5rem;
+  --padding-page-top: 1.5rem;
+  --header-padding-top: 1rem;
+
+  //border radius
+  --border-radius-box: 6px;
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    //paddings
+    --padding-page-sides: 1rem;
+    --padding-page-top: 1rem;
+  }
+}

@@ -1,0 +1,36 @@
+@use "./reset";
+@use "./variables/global";
+@use "./themes/dark";
+@use "./themes/normal";
+@use "./mixins/mixins.scss";
+
+html {
+  background: var(--bg-color-default);
+}
+
+body {
+  font: var(--font-m);
+  color: var(--primary-color);
+}
+
+.app {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color-default);
+}
+
+.content-page {
+  display: flex;
+  flex-grow: 1;
+}
+
+.page-wrapper {
+  flex-grow: 1;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

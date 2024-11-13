@@ -1,0 +1,11 @@
+@use "../../../../app/styles/mixins/mixins.scss" as mixins;
+
+.SidebarButtons {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.CancelButton {
+  @include mixins.PicButton;
+}

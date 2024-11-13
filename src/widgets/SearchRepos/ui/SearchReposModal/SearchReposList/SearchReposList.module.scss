@@ -1,0 +1,31 @@
+.SearchReposList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: var(--searchRepos-modal-ul-padding-top);
+  position: relative;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2 * var(--header-padding-top));
+    height: 1px;
+    background: var(--border-color-default);
+  }
+}
+
+.SearchReposListOpen {
+  display: flex;
+}
+
+.SearchReposListClosed {
+  display: none;
+}

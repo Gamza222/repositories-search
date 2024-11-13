@@ -1,0 +1,24 @@
+{
+  "Find a repository...": "Find a repository...",
+  "Sign out": "Sign out",
+  "Type": "Введите",
+  "to search": "для поиска",
+  "User repositories": "User repositories",
+  "Search all of GitHub": "Поиск по всему GitHub",
+  "Jump to": "Перейти",
+  "User is not authenticated or login is unavailable.": "Пользователь не найден или не доступен.",
+  "Visit github profile": "Перейти на профиль в Github",
+  "Stars": "Звезды",
+  "No commits": "Нет коммитов",
+  "Languages": "Языки",
+  "No languages found": "Нет языков",
+  "No repositoies found!": "Репозитории не найдены!",
+  "languagesFullNames": {
+    "en": "Английский",
+    "ru": "Русский"
+  },
+  "languagesShortNames": {
+    "en": "Анг",
+    "ru": "Рус"
+  }
+}

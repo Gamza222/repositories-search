@@ -1,0 +1,13 @@
+@use "../../../../app/styles/mixins/mixins.scss" as mixins;
+
+.SearchReposButton {
+  border: 1px solid var(--border-color-default);
+  width: 100%;
+}
+
+.SearchLogo {
+  visibility: inherit;
+  &__pic {
+    visibility: inherit;
+  }
+}

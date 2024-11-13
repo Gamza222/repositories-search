@@ -1,0 +1,18 @@
+.SearchReposButtonText {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  gap: 0.3rem;
+
+  &__dash {
+    border: 1px solid var(--color-gray);
+    padding: calc(var(--font-size-m) / 2.5) !important;
+    line-height: calc(var(--font-size-m) / 3.5);
+    border-radius: 4px;
+    color: var(--color-gray);
+  }
+
+  > p {
+    white-space: nowrap;
+  }
+}

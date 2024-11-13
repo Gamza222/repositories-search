@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"],
+      "app/*": ["./src/app/*"],
+      "shared/*": ["./src/shared/*"],
+      "entities/*": ["./src/entities/*"],
+      "features/*": ["./src/features/*"],
+      "widgets/*": ["./src/widgets/*"],
+      "pages/*": ["./src/pages/*"]
+    }
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": [
+    "./config/jest",
+    "./config/build",
+    "webpack.config.ts",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./config/**/*",
+    "./json-server/**/*",
+    "src/entities/Counter/model/selectors/getCounter",
+    "config/storybook",
+    "src/entities/GithubRepository/api/GetRepositoriesByUser/GetRepositoriesBySearch.ts]",
+    "src/shared/api/graphQl"
+  ]
+}
